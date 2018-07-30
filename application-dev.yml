@@ -15,11 +15,11 @@ spring:
   rabbitmq:
     host: paascloud-mq-rabbit
     port: 5672
-    username: guest
-    password: guest
+    username: victor
+    password: victor123
   redis:
     host: paascloud-db-redis
-    password: paascloud@redis
+    password: 123456
     port: 6379
     timeout: 0
   datasource:
@@ -100,7 +100,7 @@ hystrix:
             timeoutInMilliseconds: 20000
 
 info:
-  软件著作权: paascloud快速搭建企业级分布式微服务平台
+  软件著作权: 快速搭建企业级分布式微服务平台
   著作登记号: 2018SR320076
   关于我们: http://paascloud.net
 
@@ -133,7 +133,7 @@ paascloud:
     callback:
       url: http://dev-api.paascloud.net/omc/pay/alipayCallback
     qrCode:
-      pcPath: /data/file/qrCode/alipay
-      qiniuPath: alipay/QRCode/
+      pcPath: d:/temp/file/qrCode/alipay
+      qiniuPath: d:/temp/QRCode/
   zk:
     zkAddressList: paascloud-provider-zk:2181
